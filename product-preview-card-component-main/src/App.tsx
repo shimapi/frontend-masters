@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import mobileImage from "./assets/image-product-mobile.jpg";
+import cartIcon from "./assets/icon-cart.svg";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+	return (
+		<>
+			<article>
+				<aside>
+					<img src={mobileImage} alt="Mobile Image" />
+				</aside>
+				<main>
+					<span className="product-type">Perfume</span>
+					<h1 className="product-title">Gabrielle Essence Eau De Parfum</h1>
+					<p className="product-description">
+						A floral, solar and voluptuous interpretation composed by Olivier
+						Polge, Perfumer-Creator for the House of CHANEL.
+					</p>
+					<div className="product-price">
+						<span className="product-current-price">$149.99</span>
+						<span className="product-old-price">$169.99</span>
+					</div>
+					<button className="product-buy">
+						<img src={cartIcon} alt="Add to Cart" />
+						Add to Cart
+					</button>
+				</main>
+			</article>
+		</>
+	);
+};
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+export default App;
