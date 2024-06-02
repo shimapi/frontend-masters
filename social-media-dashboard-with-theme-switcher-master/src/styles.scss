@@ -1,4 +1,46 @@
+//import font from google
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+$font-inter: "Inter", sans-serif;
+
+$color-lime-green: hsl(163, 72%, 41%);
+$color-bright-red: hsl(356, 69%, 56%);
+$color-facebook: hsl(208, 92%, 53%);
+$color-twitter: hsl(203, 89%, 53%);
+$color-instagram: linear-gradient(
+	to right,
+	hsl(37, 97%, 70%),
+	hsl(329, 70%, 58%)
+);
+$color-youtube: hsl(348, 97%, 39%);
+
+$color-toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+$color-toggle-light: hsl(230, 22%, 74%);
+
+/* Dark Theme */
+$color-very-dark-blue-bg: hsl(230, 17%, 14%); //Main BG
+$color-very-dark-blue-top-bg-pattern: hsl(232, 19%, 15%); //Top BG Pattern
+$color-dark-desaturated-blue: hsl(228, 28%, 20%); //Card BG
+$color-desaturated-blue: hsl(228, 34%, 66%); //Text
+$color-white-text: hsl(0, 0%, 100%); //Text
+
+/* Light Theme */
+$color-white-bg: hsl(0, 0%, 100%); //Main BG
+$color-very-pale-blue-top-bg-pattern: hsl(225, 100%, 98%); //Top BG Pattern
+$color-light-grayish-blue: hsl(227, 47%, 96%); //Card BG
+$color-dark-grayish-blue: hsl(228, 12%, 44%); //Text
+$color-very-dark-blue-text: hsl(230, 17%, 14%); //Text
+
+* {
+	box-sizing: border-box;
+	border: 1px solid teal;
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	background-color: black;
 	color: white;
+	font-family: $font-inter;
+	font-weight: 400;
 }

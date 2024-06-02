@@ -1,0 +1,50 @@
+{
+  "1": {
+    "title": "Page Views",
+    "followers": "87",
+    "percentage": "3%",
+    "icon": "Facebook"
+  },
+  "2": {
+    "title": "Likes",
+    "followers": "52",
+    "percentage": "2%",
+    "icon": "Facebook"
+  },
+  "3": {
+    "title": "Likes",
+    "followers": "5462",
+    "percentage": "2257%",
+    "icon": "Instagram"
+  },
+  "4": {
+    "title": "Profile Views",
+    "followers": "52k",
+    "percentage": "1375%",
+    "icon": "Instagram"
+  },
+  "5": {
+    "title": "Retweets",
+    "followers": "117",
+    "percentage": "303%",
+    "icon": "Twitter"
+  },
+  "6": {
+    "title": "Likes",
+    "followers": "507",
+    "percentage": "553%",
+    "icon": "Twitter"
+  },
+  "7": {
+    "title": "Likes",
+    "followers": "107",
+    "percentage": "19%",
+    "icon": "Youtube"
+  },
+  "8": {
+    "title": "Total Views",
+    "followers": "1407",
+    "percentage": "12%",
+    "icon": "Youtube"
+  }
+}
