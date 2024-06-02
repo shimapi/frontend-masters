@@ -1,4 +1,5 @@
 import mobileImage from "./assets/image-product-mobile.jpg";
+//import desktopImage from "./assets/image-product-desktop.jpg";
 import cartIcon from "./assets/icon-cart.svg";
 
 const App = () => {
@@ -6,7 +7,11 @@ const App = () => {
 		<>
 			<article className="product">
 				<aside className="product__image">
-					<img src={mobileImage} alt="Mobile Image" />
+					<img
+						src={mobileImage}
+						className="product__image--content"
+						alt="Perfume"
+					/>
 				</aside>
 				<main className="product__info">
 					<span className="product__type">Perfume</span>

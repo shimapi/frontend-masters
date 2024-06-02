@@ -35,16 +35,24 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	background-color: $color-white;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
 	&__image {
 		overflow: hidden;
 		display: flex;
-		object-fit: contain;
-		background-image: url("./assets/image-header-mobile.jpg");
 		width: 100%;
-		height: 100%;
-	}
+		height: 300px;
+		background-image: url("./assets/image-product-mobile.jpg");
+		background-size: cover;
+		background-position: center;
 
+		&--content {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			display: none;
+		}
+	}
 	&__info {
 		padding: 20px;
 	}
@@ -68,7 +76,6 @@ body {
 		font-size: 14px;
 		line-height: 20px;
 	}
-
 	&__price {
 		display: flex;
 		padding: 20px 0;
@@ -81,7 +88,7 @@ body {
 		}
 		&-old {
 			color: $color-dark-grayish-blue;
-			font-family: $font-fraunces;
+			font-family: $font-montserrat;
 			font-size: 12px;
 			text-decoration: line-through;
 			margin-left: 10px;
@@ -110,14 +117,19 @@ body {
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
 	.product {
+		height: 350px;
 		width: 700px;
-		display: flex;
 		flex-direction: row;
 
 		&__image {
-			background-image: url("./assets/image-header-desktop.jpg");
+			background-image: url("./assets/image-product-desktop.jpg");
+			height: 100%;
+
+			&--content {
+				display: none;
+			}
 		}
 	}
 }
