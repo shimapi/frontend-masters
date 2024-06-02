@@ -9,7 +9,7 @@ Hopefully some of these projects will be in my portfolio.
 ### 1. Product Preview Card Component Main
 
 - **Made with**: Vite, React, Sass, and TypeScript.
-- **Status**: Done
+- **Status**: Done ✅
 - **Deployed**: Nope
 - **Link to project**: [Product Preview Card Component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
 
