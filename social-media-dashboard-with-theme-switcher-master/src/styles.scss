@@ -44,3 +44,48 @@ body {
 	font-family: $font-inter;
 	font-weight: 400;
 }
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.rrss {
+	&__title {
+	}
+	&__header {
+	}
+	&__total-followers {
+	}
+
+	&__main {
+	}
+}
+
+.colorbar {
+	height: 10px;
+	width: 100%;
+}
+.social-card {
+	&__colorbar-facebook {
+		background-color: $color-facebook;
+	}
+	&__colorbar-twitter {
+		background-color: $color-twitter;
+	}
+	&__colorbar-instagram {
+		background: $color-instagram;
+	}
+	&__colorbar-youtube {
+		background-color: $color-youtube;
+	}
+
+	&__username {
+	}
+	&__icon {
+		&-logo {
+		}
+	}
+}
