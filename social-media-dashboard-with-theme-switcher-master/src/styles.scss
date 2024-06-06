@@ -31,28 +31,37 @@ $color-light-grayish-blue: hsl(227, 47%, 96%); //Card BG
 $color-dark-grayish-blue: hsl(228, 12%, 44%); //Text
 $color-very-dark-blue-text: hsl(230, 17%, 14%); //Text
 
+:root {
+	color-scheme: light dark;
+}
 * {
 	box-sizing: border-box;
-	border: 1px solid teal;
+	//border: 1px solid;
+	//border-color: light-dark(rgb(202, 92, 214), rgb(73, 155, 101));
 	padding: 0;
 	margin: 0;
 }
 
 body {
-	background-color: black;
-	color: white;
+	background-color: light-dark($color-white-bg, $color-very-dark-blue-bg);
+	color: light-dark($color-desaturated-blue, $color-light-grayish-blue);
 	font-family: $font-inter;
 	font-weight: 400;
 }
 
 .container {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	flex-direction: column;
 }
 
 .rrss {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	flex-direction: column;
+
 	&__title {
 	}
 	&__header {
@@ -61,14 +70,28 @@ body {
 	}
 
 	&__main {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
 }
 
 .colorbar {
-	height: 10px;
+	height: 5px;
 	width: 100%;
+	border-radius: 5px 5px 0 0;
 }
 .social-card {
+	min-width: 250px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: light-dark(
+		$color-light-grayish-blue,
+		$color-dark-desaturated-blue
+	);
+
 	&__colorbar-facebook {
 		background-color: $color-facebook;
 	}
@@ -83,9 +106,45 @@ body {
 	}
 
 	&__username {
+		font-weight: bold;
+		padding: 30px 0 0 0;
+		color: light-dark($color-light-grayish-blue, $color-dark-grayish-blue);
+		letter-spacing: 1px;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 	}
 	&__icon {
+		margin-right: 10px;
 		&-logo {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	&__followers {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 0;
+
+		&-number {
+			font-size: 56px;
+			font-weight: bold;
+		}
+		&-text {
+			font-size: 16px;
+			color: light-dark($color-light-grayish-blue, $color-dark-grayish-blue);
+			text-transform: uppercase;
+			letter-spacing: 4px;
+		}
+	}
+	&__today {
+		padding-bottom: 30px;
+		font-size: 12px;
+		font-weight: bold;
+		color: $color-lime-green;
+
+		&-arrow {
+			margin-right: 5px;
 		}
 	}
 }
