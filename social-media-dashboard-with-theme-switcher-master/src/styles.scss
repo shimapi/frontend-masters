@@ -21,6 +21,8 @@ $color-toggle-light: hsl(230, 22%, 74%);
 $color-very-dark-blue-bg: hsl(230, 17%, 14%); //Main BG
 $color-very-dark-blue-top-bg-pattern: hsl(232, 19%, 15%); //Top BG Pattern
 $color-dark-desaturated-blue: hsl(228, 28%, 20%); //Card BG
+$color-dark-desaturated-blue-active: hsl(230, 27%, 25%); //Card BG
+
 $color-desaturated-blue: hsl(228, 34%, 66%); //Text
 $color-white-text: hsl(0, 0%, 100%); //Text
 
@@ -65,8 +67,16 @@ body {
 	&__title {
 	}
 	&__header {
+		padding: 50px 0;
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
 	}
 	&__total-followers {
+		color: light-dark($color-desaturated-blue, $color-dark-grayish-blue);
+		font-weight: bold;
+		display: block;
+		margin: 5px 0;
 	}
 
 	&__main {
@@ -83,7 +93,7 @@ body {
 	border-radius: 5px 5px 0 0;
 }
 .social-card {
-	min-width: 250px;
+	min-width: 260px;
 	text-align: center;
 	font-size: 12px;
 	border-radius: 5px;
@@ -91,6 +101,15 @@ body {
 		$color-light-grayish-blue,
 		$color-dark-desaturated-blue
 	);
+
+	&:hover,
+	&:active {
+		background-color: light-dark(
+			$color-very-pale-blue-top-bg-pattern,
+			$color-dark-desaturated-blue-active
+		);
+		cursor: pointer;
+	}
 
 	&__colorbar-facebook {
 		background-color: $color-facebook;
@@ -146,5 +165,16 @@ body {
 		&-arrow {
 			margin-right: 5px;
 		}
+	}
+}
+
+//media queries
+
+@media (min-width: 768px) {
+	.rrss {
+		width: 60%;
+	}
+	.social-card {
+		min-width: 300px;
 	}
 }
