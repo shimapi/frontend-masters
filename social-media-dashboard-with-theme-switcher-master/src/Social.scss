@@ -16,7 +16,7 @@
 		justify-content: space-between;
 	}
 	&__total-followers {
-		color: light-dark($color-desaturated-blue, $color-dark-grayish-blue);
+		color: light-dark($color-desaturated-blue, $color-toggle-light);
 		font-weight: bold;
 		display: block;
 		margin: 5px 0;
@@ -76,7 +76,7 @@
 	&__username {
 		font-weight: bold;
 		padding: 30px 0 0 0;
-		color: light-dark($color-light-grayish-blue, $color-dark-grayish-blue);
+		color: light-dark($color-light-grayish-blue, $color-toggle-light);
 		letter-spacing: 1px;
 		align-items: center;
 		display: flex;
@@ -117,8 +117,6 @@
 	}
 }
 
-//media queries
-
 @media (max-width: 720px) {
 	.container {
 		display: flex;
@@ -126,7 +124,6 @@
 		height: 100vh;
 		flex-direction: column;
 	}
-
 	.social-card {
 	}
 

@@ -1,21 +1,100 @@
 @import "./assets/css-variables.scss";
 
 .overview {
+	font-family: $font-inter;
 	display: flex;
 	width: 80%;
 	justify-content: space-between;
 	flex-direction: column;
+	padding: 30px 0;
 
 	&__header {
-		padding: 50px 0;
+		padding: 30px 0;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 	&__title {
-		font-size: 28px;
+		font-size: 18px;
 	}
 
 	&__main {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+}
+
+.overview-card {
+	min-width: 260px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: light-dark(
+		$color-light-grayish-blue,
+		$color-dark-desaturated-blue
+	);
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+
+	&:hover,
+	&:active {
+		background-color: light-dark(
+			$color-very-pale-blue-top-bg-pattern,
+			$color-dark-desaturated-blue-active
+		);
+		cursor: pointer;
+	}
+
+	&__column-left {
+		text-align: left;
+	}
+	&__column-right {
+		text-align: right;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: larger;
+		color: light-dark($color-light-grayish-blue, $color-toggle-light);
+		margin-bottom: 30px;
+	}
+	&__number {
+		font-size: 32px;
+		font-weight: bold;
+	}
+	&__icon {
+		margin-bottom: 40px;
+	}
+	&__today {
+		font-size: 12px;
+		font-weight: bold;
+		color: $color-lime-green;
+
+		&-arrow {
+			margin-right: 5px;
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.container {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		flex-direction: column;
+	}
+
+	.overview {
+		&__header {
+			display: flex;
+			flex-direction: column;
+			align-content: space-between;
+			align-items: start;
+		}
+		&__main {
+			justify-content: center;
+		}
 	}
 }
