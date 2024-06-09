@@ -5,7 +5,7 @@ interface OverviewCardProps {
 	icon: string;
 	followers: string;
 	percentage: string;
-	arrow: "up" | "down";
+	arrow: string;
 }
 
 const OverviewCard: React.FC<OverviewCardProps> = ({
@@ -17,6 +17,32 @@ const OverviewCard: React.FC<OverviewCardProps> = ({
 }) => {
 	const arrowImage = arrow === "up" ? images.arrowUp : images.arrowDown;
 
+	let socialName: string;
+	let socialImage: string;
+
+	switch (icon) {
+		case "Facebook":
+			socialImage = images.facebook;
+			socialName = "facebook";
+			break;
+		case "Twitter":
+			socialImage = images.twitter;
+			socialName = "twitter";
+			break;
+		case "Instagram":
+			socialImage = images.instagram;
+			socialName = "instagram";
+			break;
+		case "Youtube":
+			socialImage = images.youtube;
+			socialName = "youtube";
+			break;
+		default:
+			socialImage = "";
+			socialName = "";
+			break;
+	}
+
 	return (
 		<article className="overview-card">
 			<section className="overview-card__column-left">
@@ -27,17 +53,17 @@ const OverviewCard: React.FC<OverviewCardProps> = ({
 			<section className="overview-card__column-right">
 				<div className="overview-card__icon">
 					<img
-						src={images.facebookIcon}
+						src={socialImage}
 						alt={icon}
-						className="overview-card__facebook"
+						className={`overview-card__${socialName}`}
 					/>
 				</div>
 
-				<div className="overview-card__today">
+				<div className={`overview-card__today ${arrow}`}>
 					<span className={`overview-card__today-arrow-${arrow}`}>
 						<img
 							src={arrowImage}
-							alt="Yey! We grow!"
+							alt={`we are going ${arrow}!!`}
 							className={`overview-card__today-arrow`}
 						/>
 					</span>

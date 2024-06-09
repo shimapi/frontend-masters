@@ -70,7 +70,7 @@
 	&__today {
 		font-size: 12px;
 		font-weight: bold;
-		color: $color-lime-green;
+		display: flex;
 
 		&-arrow {
 			margin-right: 5px;

@@ -1,30 +1,34 @@
-{
-  "1": {
+[
+  {
     "username": "@nathanf",
     "followers": "1987",
-    "social-word": "Followers",
+    "socialword": "Followers",
     "comparison": "12 Today",
-    "icon": "Facebook"
+    "icon": "Facebook",
+    "arrow": "up"
   },
-  "2": {
+  {
     "username": "@nathanf",
     "followers": "1044",
-    "social-word": "Followers",
+    "socialword": "Followers",
     "comparison": "99 Today",
-    "icon": "Twitter"
+    "icon": "Twitter",
+    "arrow": "up"
   },
-  "3": {
+  {
     "username": "@realnathanf",
     "followers": "11k",
-    "social-word": "Followers",
+    "socialword": "Followers",
     "comparison": "1099 Today",
-    "icon": "Instagram"
+    "icon": "Instagram",
+    "arrow": "up"
   },
-  "4": {
+  {
     "username": "Nathan F.",
     "followers": "8239",
-    "social-word": "Subscribers",
+    "socialword": "Subscribers",
     "comparison": "144 Today",
-    "icon": "YouTube"
+    "icon": "Youtube",
+    "arrow": "down"
   }
-}
+]

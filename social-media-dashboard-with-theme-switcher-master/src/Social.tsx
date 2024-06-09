@@ -1,5 +1,6 @@
 import SocialCard from "./SocialCard";
 import "./Social.scss";
+import socialJSON from "./assets/rrss.json";
 
 const rrss = () => {
 	return (
@@ -12,10 +13,20 @@ const rrss = () => {
 				<div className="switch">Dark/Light Mode</div>
 			</header>
 			<main className="rrss__main">
-				<SocialCard />
-				<SocialCard />
-				<SocialCard />
-				<SocialCard />
+				{socialJSON &&
+					socialJSON.map(
+						({ username, followers, socialword, comparison, icon, arrow }) => (
+							<SocialCard
+								username={username}
+								followers={followers}
+								socialword={socialword}
+								comparison={comparison}
+								icon={icon}
+								arrow={arrow}
+								key={followers}
+							/>
+						)
+					)}
 			</main>
 		</section>
 	);
