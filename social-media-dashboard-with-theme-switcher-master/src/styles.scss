@@ -65,12 +65,13 @@ body {
 	flex-direction: column;
 
 	&__title {
+		font-size: 28px;
 	}
 	&__header {
 		padding: 50px 0;
 		display: flex;
-		flex-direction: column;
-		align-content: space-between;
+		align-items: center;
+		justify-content: space-between;
 	}
 	&__total-followers {
 		color: light-dark($color-desaturated-blue, $color-dark-grayish-blue);
@@ -85,6 +86,12 @@ body {
 		flex-wrap: wrap;
 		gap: 30px;
 	}
+	&__total {
+		//width: ;
+	}
+}
+.switch {
+	text-align: right;
 }
 
 .colorbar {
@@ -170,11 +177,32 @@ body {
 
 //media queries
 
-@media (min-width: 768px) {
-	.rrss {
-		width: 60%;
+@media (max-width: 720px) {
+	.container {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		flex-direction: column;
 	}
+
 	.social-card {
-		min-width: 300px;
+	}
+
+	.rrss {
+		&__header {
+			padding: 50px 0;
+			display: flex;
+			flex-direction: column;
+			align-content: space-between;
+		}
+		&__main {
+			justify-content: center;
+		}
+	}
+	.switch {
+		border-top: 1px solid $color-dark-grayish-blue;
+		width: 100%;
+		padding: 20px 0;
+		margin: 20px 0;
 	}
 }
