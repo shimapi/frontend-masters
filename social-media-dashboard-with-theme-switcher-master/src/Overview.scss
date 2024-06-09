@@ -1,0 +1,21 @@
+@import "./assets/css-variables.scss";
+
+.overview {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	flex-direction: column;
+
+	&__header {
+		padding: 50px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__title {
+		font-size: 28px;
+	}
+
+	&__main {
+	}
+}

@@ -1,4 +1,5 @@
 import OverviewCard from "./OverviewCard";
+import "./Overview.scss";
 
 const Overview = () => {
 	return (
