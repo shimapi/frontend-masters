@@ -78,15 +78,11 @@
 	}
 }
 
-@media (max-width: 720px) {
-	.container {
-		display: flex;
-		align-items: center;
-		height: 100vh;
-		flex-direction: column;
-	}
-
+@media screen and (max-width: 720px) {
 	.overview {
+		flex-direction: column;
+		min-width: 690px;
+
 		&__header {
 			display: flex;
 			flex-direction: column;
@@ -96,5 +92,12 @@
 		&__main {
 			justify-content: center;
 		}
+	}
+}
+
+@media screen and (min-width: 721px) and (max-width: 1413px) {
+	.overview {
+		flex-direction: column;
+		min-width: 690px;
 	}
 }

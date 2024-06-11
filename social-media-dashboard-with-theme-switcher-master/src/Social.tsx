@@ -1,10 +1,11 @@
 import SocialCard from "./SocialCard";
 import "./Social.scss";
 import socialJSON from "./assets/rrss.json";
+//import Switch from "./Switch";
 
 const rrss = () => {
 	return (
-		<section className="rrss">
+		<section className="rrss total-cards">
 			<header className="rrss__header">
 				<section className="rrss__total">
 					<h1 className="rrss__title">Social Media Dashboard</h1>
