@@ -2,7 +2,6 @@
 
 .rrss {
 	display: flex;
-	width: 80%;
 	justify-content: space-between;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -112,14 +111,5 @@
 		&-arrow {
 			margin-right: 5px;
 		}
-	}
-}
-
-@media (max-width: 720px) {
-	.switch {
-		border-top: 1px solid $color-dark-grayish-blue;
-		width: 100%;
-		padding: 20px 0;
-		margin: 20px 0;
 	}
 }

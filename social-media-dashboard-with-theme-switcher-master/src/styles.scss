@@ -18,10 +18,8 @@ body {
 
 .container {
 	display: flex;
-	align-items: center;
 	height: 100vh;
 	flex-direction: column;
-	max-width: 1415px;
 }
 
 .up {
@@ -31,16 +29,29 @@ body {
 	color: $color-bright-red;
 }
 
-@media screen and (max-width: 720px) {
+.total-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@media screen and (max-width: 700px) {
 	.total-cards {
 		flex-direction: column;
-		min-width: 690px;
+		min-width: 520px;
+	}
+	.switch {
+		border-top: 1px solid $color-dark-grayish-blue;
+		width: 100%;
+		padding: 20px 0;
+		margin: 20px 0;
 	}
 }
 
 @media screen and (min-width: 721px) and (max-width: 1413px) {
 	.total-cards {
-		flex-direction: column;
-		min-width: 690px;
+		min-width: 720px;
+		max-width: 1413px;
 	}
 }
