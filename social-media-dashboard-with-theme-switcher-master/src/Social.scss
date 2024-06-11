@@ -3,6 +3,7 @@
 .rrss {
 	&__title {
 		font-size: 28px;
+		color: light-dark($color-very-dark-blue-bg, $color-white-bg);
 	}
 	&__header {
 		padding: 50px 0;
@@ -68,7 +69,7 @@
 	&__username {
 		font-weight: bold;
 		padding: 30px 0 0 0;
-		color: light-dark($color-light-grayish-blue, $color-toggle-light);
+		color: light-dark($color-dark-grayish-blue, $color-toggle-light);
 		letter-spacing: 1px;
 		align-items: center;
 		display: flex;
@@ -89,10 +90,11 @@
 		&-number {
 			font-size: 56px;
 			font-weight: bold;
+			color: light-dark($color-very-dark-blue-bg, $color-white-bg);
 		}
 		&-text {
 			font-size: 16px;
-			color: light-dark($color-light-grayish-blue, $color-dark-grayish-blue);
+			color: light-dark($color-dark-grayish-blue, $color-toggle-light);
 			text-transform: uppercase;
 			letter-spacing: 4px;
 		}

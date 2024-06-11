@@ -52,12 +52,13 @@
 	&__title {
 		font-weight: bold;
 		font-size: larger;
-		color: light-dark($color-light-grayish-blue, $color-toggle-light);
+		color: light-dark($color-dark-grayish-blue, $color-toggle-light);
 		margin-bottom: 30px;
 	}
 	&__number {
 		font-size: 32px;
 		font-weight: bold;
+		color: light-dark($color-very-dark-blue-bg, $color-white-bg);
 	}
 	&__icon {
 		margin-bottom: 40px;

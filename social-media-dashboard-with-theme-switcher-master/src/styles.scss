@@ -1,3 +1,5 @@
+//https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark
+
 @import "./assets/css-variables.scss";
 
 :root {
@@ -9,9 +11,16 @@
 	margin: 0;
 }
 
+.light {
+	/* forces light color-scheme */
+	color-scheme: light;
+}
+.dark {
+	/* forces dark color-scheme */
+	color-scheme: dark;
+}
+
 body {
-	background-color: light-dark($color-white-bg, $color-very-dark-blue-bg);
-	color: light-dark($color-desaturated-blue, $color-light-grayish-blue);
 	font-family: $font-inter;
 	font-weight: 400;
 }
@@ -21,8 +30,10 @@ body {
 	flex-direction: column;
 }
 .container {
+	background-color: light-dark($color-white-bg, $color-very-dark-blue-bg);
+	color: light-dark($color-desaturated-blue, $color-light-grayish-blue);
 	display: flex;
-	height: 100vh;
+	//height: 100vh;
 	flex-direction: column;
 	padding: 0 30px;
 	align-items: center;
