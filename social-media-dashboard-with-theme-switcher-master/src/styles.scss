@@ -37,10 +37,9 @@ body {
 
 .total-cards {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 @media screen and (max-width: 700px) {
@@ -62,10 +61,10 @@ body {
 
 @media screen and (min-width: 721px) and (max-width: 1413px) {
 	#root {
-		min-width: 720px;
+		min-width: 520px;
 	}
 	.total-cards {
-		min-width: 720px;
+		min-width: 520px;
 		max-width: 1413px;
 	}
 }

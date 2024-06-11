@@ -1,10 +1,6 @@
 @import "./assets/css-variables.scss";
 
 .rrss {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-
 	&__title {
 		font-size: 28px;
 	}

@@ -1,9 +1,6 @@
 @import "./assets/css-variables.scss";
 
 .overview {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
 	padding: 30px 0;
 
 	&__header {
