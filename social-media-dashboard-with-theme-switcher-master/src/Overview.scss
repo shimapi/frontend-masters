@@ -75,3 +75,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 700px) {
+	.overview {
+		&__main {
+			justify-content: center;
+		}
+	}
+}

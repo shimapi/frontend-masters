@@ -15,11 +15,17 @@ body {
 	font-family: $font-inter;
 	font-weight: 400;
 }
-
+#root {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
 .container {
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
+	padding: 0 30px;
+	align-items: center;
 }
 
 .up {
@@ -33,13 +39,18 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (max-width: 700px) {
+	#root {
+		min-width: 320px;
+	}
 	.total-cards {
 		flex-direction: column;
-		min-width: 520px;
+		min-width: 320px;
+		max-width: 520px;
 	}
 	.switch {
 		border-top: 1px solid $color-dark-grayish-blue;
@@ -50,8 +61,17 @@ body {
 }
 
 @media screen and (min-width: 721px) and (max-width: 1413px) {
+	#root {
+		min-width: 720px;
+	}
 	.total-cards {
 		min-width: 720px;
+		max-width: 1413px;
+	}
+}
+
+@media screen and (min-width: 1413px) {
+	.total-cards {
 		max-width: 1413px;
 	}
 }

@@ -4,7 +4,7 @@ import overviewJSON from "./assets/overview.json";
 
 const Overview = () => {
 	return (
-		<section className="total-cards overview ">
+		<section className="overview total-cards ">
 			<header className="overview__header">
 				<h2 className="overview__title">Overview - Today</h2>
 			</header>
