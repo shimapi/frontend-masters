@@ -1,5 +1,4 @@
-// src/ThemeContext.tsx
-import React, { createContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useState, useEffect, ReactNode } from "react";
 
 interface ThemeContextProps {
 	theme: string;
@@ -15,7 +14,7 @@ interface ThemeProviderProps {
 	children: ReactNode;
 }
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	const [theme, setTheme] = useState<string>("light");
 
 	useEffect(() => {
@@ -26,7 +25,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 	}, []);
 
 	useEffect(() => {
-		//document.documentElement.setAttribute("data-theme", theme);
+		document.documentElement.setAttribute("data-theme", theme);
 		localStorage.setItem("theme", theme);
 	}, [theme]);
 
