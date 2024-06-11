@@ -8,8 +8,8 @@
 	&__header {
 		padding: 50px 0;
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		flex-direction: column;
 	}
 	&__total-followers {
 		color: light-dark($color-desaturated-blue, $color-toggle-light);
@@ -25,10 +25,6 @@
 		gap: 30px;
 	}
 }
-.switch {
-	text-align: right;
-}
-
 .colorbar {
 	height: 5px;
 	width: 100%;

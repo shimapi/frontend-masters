@@ -24,7 +24,7 @@ label:after {
 	left: 3px;
 	width: 21px;
 	height: 21px;
-	background: #fff;
+	background: $color-white-text;
 	border-radius: 90px;
 	transition: 0.3s;
 }
@@ -51,5 +51,21 @@ label:active:after {
 	}
 	&__mode::first-letter {
 		text-transform: capitalize;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.switch {
+		border-top: 1px solid;
+		border-color: light-dark($color-dark-grayish-blue, $color-desaturated-blue);
+		width: 100%;
+		padding: 20px 0;
+		margin: 20px 0;
+
+		&__container {
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
 	}
 }
