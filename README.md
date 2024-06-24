@@ -16,6 +16,6 @@ Hopefully some of these projects will be in my portfolio.
 ### 2. Social Media Dashboard with Theme Switcher Master
 
 - **Made with**: Vite, React, Sass, and TypeScript.
-- **Status**: Starting
+- **Status**: Done ✅
 - **Deployed**: Nope
 - **Link to project**: [Social Media Dashboard with Theme Switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H)
