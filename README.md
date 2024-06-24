@@ -1,4 +1,4 @@
-# Frontend Masters
+# Frontend Mentor
 
 I'm starting to make little projects to practice and gain confidence in my abilities...
 
